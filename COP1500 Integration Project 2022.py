@@ -1,6 +1,7 @@
 # Integration Project for COP 1500.
-# Author: Thomas Trinh
 # This program is intended to resemble an "Assistant" by carrying out computations and responding to user inputs.
+# Author: Thomas Trinh
+
 import random
 import math
 import time
