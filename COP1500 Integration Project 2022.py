@@ -1,7 +1,10 @@
 """
 Integration Project for COP 1500.
-Author: Thomas Trinh
+A simple command line program that mainly specializes in solving specific mathematical problems.
+The program also contains several guessing-based games that rely on the functions imported
+from the random module.
 """
+__author__ = "Thomas Trinh"
 
 import math
 import time
