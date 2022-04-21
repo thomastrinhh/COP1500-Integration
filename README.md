@@ -4,7 +4,7 @@ Integration project for COP 1500 at Florida Gulf Coast University (Spring 2022)
 
 For this project, we were to create one cohesive program throughout the semester that displays the skills we learned in COP 1500.
 I chose to create a simple command line program that mainly specializes in solving simple mathematical problems.
-The program also contains several guessing-based games that rely on the functions from the random module. 
+The program also contains several guessing-based games that rely on the functions imported from the random module. 
 
 ## Project Requirements
 
