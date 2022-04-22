@@ -19,9 +19,7 @@ while not name.isalpha():
 if name.isalpha():
     print('\nHello ' + name + '! ', end='')
     print()
-    print('I can aid in performing various computations as well as provide '
-          'entertainment.')
-    print('You are currently in the console.')
+    print('I specialize in solving simple math problems and guessing games! ')
 
 
 def dot():
@@ -78,13 +76,15 @@ subtraction, division, and exponents
     round_for_user = input("\nWould you like me to round this value? ")
     if round_for_user.lower() == "yes" or round_for_user.lower() == "y":
         # Asks user how many decimal places they would like to round to.
-        decimal_places = int(input("How many places would you like me to "
-                                   "round to? "))
+        decimal_number = input("How many places would you like me to "
+                               "round to? ")
         try:
             int(decimal_places)
-        except ValueError or TypeError:
+        except:
             print('\nThat is not a valid integer ' + name +
                   '. Please try again.\n')
+            decimal_number = input("How many places would you like me to round to? ")
+        decimal_places = int(decimal_number)
         rounded_value = round(solution, decimal_places)
         print("\nSolution rounded to", decimal_places, "decimal places:",
               rounded_value)
@@ -175,7 +175,7 @@ from mean_med_range_inputs.
         print("The mean value out of the", length,
               "values you entered was:", range_value)
 
-    if ask_user.lower() == "median":
+    elif ask_user.lower() == "median":
         # If length of list is odd, median is middle value inside list
         if length % 2 != 0:
             half_of_list = int(length / 2)
@@ -286,10 +286,11 @@ Function below emulates dice rolls. Generates two random integers ranging from
 1-6 to simulate this. Sum of these random "dice rolls" are computed and user
 must guess the sum correctly to win.
     """
+    sum_roll = 0
+
     print("\n\nFor this game you will bet on the sum of two dice rolls.")
     print("If you guess the correct total of the two, "
           "you win. If not you lose.")
-    sum_roll = 0
     guess_roll = input("\nWhat do you think the sum "
                        "of your two rolls will be? ")
     try:
@@ -407,4 +408,5 @@ user to traverse through different functions.
         main()
 
 
-main()
+if __name__ == "__main__":
+    main()
